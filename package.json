@@ -1,5 +1,5 @@
 {
-  "name": "snowCountry",
+  "name": "snowcountry",
   "version": "0.0.1",
   "description": "A snowCountry API wrapper",
   "main": "index.js",
