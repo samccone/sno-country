@@ -1,5 +1,5 @@
 var request     = require('request');
-var apiKey      = process.env['key'] || "SnoCountry.example";
+var apiKey      = process.env['SNOCOUNTRY_KEY'] || "SnoCountry.example";
 var baseUrl     = "http://feeds.snocountry.com/conditions.php?apiKey="+apiKey;
 
 /*
@@ -11,7 +11,7 @@ var baseUrl     = "http://feeds.snocountry.com/conditions.php?apiKey="+apiKey;
 */
 function getResortsByStates(states, cb) {
   request.get(baseUrl+"&states="+states, function(err, response, body) {
-    cb(err, JSON.parse(body));
+    typeof cb == "function" && cb(err, JSON.parse(body));
   });
 }
 
@@ -21,7 +21,7 @@ function getResortsByStates(states, cb) {
 */
 function getResortsByIds(ids, cb) {
   request.get(baseUrl+"&ids="+ids, function(err, response, body) {
-    cb(err, JSON.parse(body));
+    typeof cb == "function" && cb(err, JSON.parse(body));
   });
 }
 
