@@ -1,0 +1,16 @@
+{
+  "name": "snowCountry",
+  "version": "0.0.1",
+  "description": "A snowCountry API wrapper",
+  "main": "index.js",
+  "dependencies": {
+    "request": "~2.11.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Sam Saccone",
+  "license": "BSD"
+}
