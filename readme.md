@@ -1,4 +1,5 @@
-** SnoCountry Api Wrapper **
+SnoCountry Api Wrapper
+====
 
 * getResortsByStates
 * getResortsByIds
